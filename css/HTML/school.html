@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CampusWork USA</title>
+
+  <link rel="stylesheet" href="../school.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="logo">INIZIO ENGAGE USA</div>
+
+  <div class="menu-toggle">&#9776;</div>
+
+  <div class="menu">
+    <a href="#home">Home</a>
+    <a href="#jobs">Jobs</a>
+    <a href="#schools">Schools</a>
+    <a href="#how">How it Works</a>
+    <a href="#resources">Resources</a>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section id="home" class="hero">
+
+  <h2>Flexible Employment Opportunities for College Students</h2>
+
+  <p>
+    INIZIO ENGAGE USA connects college students with flexible,
+    part-time and student-friendly employment opportunities designed
+    to fit around their academic schedules.
+  </p>
+
+  <button onclick="scrollToJobs()">Explore Jobs</button>
+
+</section>
+
+
+<!-- BACK TO TOP -->
+<button id="backToTop">&#8679;</button>
+
+
+<!-- JOBS -->
+<section id="jobs" class="section">
+
+  <h2>Student Employment Opportunities</h2>
+
+  <p>
+    Explore flexible part-time opportunities designed with students in mind.
+    These positions can provide valuable work experience while allowing
+    students to balance employment with their classes and academic responsibilities.
+  </p>
+
+
+  <!-- CHILDCARE INFORMATION -->
+  <div class="card childcare-info">
+
+    <div class="job-img">
+      <img
+        src="https://img.icons8.com/ios-filled/50/000000/baby.png"
+        alt="Childcare"
+      />
+    </div>
+
+    <h3>Childcare Opportunity</h3>
+
+    <p>
+      Childcare is a flexible, student-friendly opportunity for individuals
+      who enjoy working with children and helping families with their
+      everyday childcare needs.
+    </p>
+
+    <p>
+      Responsibilities may include supervising children, helping children
+      participate in safe and age-appropriate activities, assisting with
+      meals and snacks, helping with homework, reading with children,
+      organizing play areas, and providing a safe, caring and positive
+      environment.
+    </p>
+
+    <p>
+      Depending on the family's needs, childcare assistants may also help
+      with simple routines such as preparing children for activities,
+      keeping their belongings organized, and making sure children are
+      supervised appropriately.
+    </p>
+
+    <p>
+      The position is designed to be <strong>part-time and flexible</strong>,
+      making it suitable for college students who need to balance work
+      responsibilities with classes, studying and other academic activities.
+    </p>
+
+    <p>
+      Previous childcare experience may be helpful, but specific
+      requirements can vary depending on the position and family.
+    </p>
+
+  </div>
+
+
+  <!-- SEARCH & FILTER -->
+  <div class="job-filters">
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search jobs..."
+    >
+
+    <select id="jobTypeFilter">
+
+      <option value="all">All Job Types</option>
+
+      <option value="Part-Time">Part-Time</option>
+
+    </select>
+
+
+    <select id="locationFilter">
+
+      <option value="all">All Locations</option>
+
+      <option value="Flexible Location">Flexible Location</option>
+
+    </select>
+
+  </div>
+
+
+  <!-- JOB CARDS -->
+  <div class="card-grid" id="jobCards">
+    <!-- JS will populate job cards dynamically -->
+  </div>
+
+</section>
+
+
+
+<!-- SCHOOLS -->
+<section id="schools" class="section alt">
+
+  <h2>Partnered Colleges & Universities</h2>
+
+  <!-- Featured carousel -->
+  <div class="school-carousel">
+
+    <div class="school">
+      <img src="/image/harvard.webp" alt="Harvard University">
+    </div>
+
+    <div class="school">
+      <img src="/image/mit.webp" alt="MIT">
+    </div>
+
+    <div class="school">
+      <img src="/image/StanfordUniversity.webp" alt="Stanford University">
+    </div>
+
+    <div class="school">
+      <img src="/image/ucla.webp" alt="UCLA">
+    </div>
+
+  </div>
+
+
+  <!-- Full grid of schools -->
+  <div class="school-grid">
+
+    <div class="school">
+      <img src="/image/ColumbiaUniversity.webp" alt="Columbia University">
+    </div>
+
+    <div class="school">
+      <img src="/image/NewYorkUniversity.webp" alt="New York University">
+    </div>
+
+    <div class="school">
+      <img src="/image/UniversityofChicago.webp" alt="University of Chicago">
+    </div>
+
+    <div class="school">
+      <img src="/image/YaleUniversity.webp" alt="Yale University">
+    </div>
+
+    <div class="school">
+      <img src="/image/PrincetonUniversity.webp" alt="Princeton University">
+    </div>
+
+    <div class="school">
+      <img src="/image/UCBerkeley.webp" alt="UC Berkeley">
+    </div>
+
+    <div class="school">
+      <img src="/image/mdc.webp" alt="Miami Dade College">
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- STUDENT IMPACT SECTION -->
+<section id="impact" class="section alt">
+
+  <h2>Students Who Benefited</h2>
+
+  <div class="impact-counter">
+
+    <div class="impact-card">
+
+      <div class="impact-icon">
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+          alt="Student Icon"
+          onerror="this.onerror=null;this.src='https://via.placeholder.com/48?text=+';"
+        />
+
+      </div>
+
+      <h3 class="counter" data-target="2450">0</h3>
+
+      <p>Enrolled Students</p>
+
+    </div>
+
+
+    <div class="impact-card">
+
+      <div class="impact-icon">
+
+        <img
+          src="https://img.icons8.com/fluency/48/000000/graduation-cap.png"
+          alt="Graduates"
+        />
+
+      </div>
+
+      <h3 class="counter" data-target="1500">0</h3>
+
+      <p>Graduated Students</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- HOW IT WORKS -->
+<section id="how" class="section">
+
+  <h2>How Student Employment Works</h2>
+
+  <div class="steps">
+
+    <div class="step">
+
+      <span>1</span>
+
+      <p>
+        Student enrolls in an accredited U.S. college or university.
+      </p>
+
+    </div>
+
+
+    <div class="step">
+
+      <span>2</span>
+
+      <p>
+        Eligibility is verified based on enrollment and applicable
+        employment requirements.
+      </p>
+
+    </div>
+
+
+    <div class="step">
+
+      <span>3</span>
+
+      <p>
+        Student explores approved flexible and part-time employment
+        opportunities through the platform.
+      </p>
+
+    </div>
+
+
+    <div class="step">
+
+      <span>4</span>
+
+      <p>
+        Student begins employment while maintaining a schedule that
+        supports their academic responsibilities.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- RESOURCES -->
+<section id="resources" class="section alt">
+
+  <h2>Student Resources</h2>
+
+  <p>
+    Learn about employment rules, work hours, taxes, resumes,
+    interviews, and requirements for students working in the United States.
+  </p>
+
+  <div class="resources">
+
+    <p>• Resume & Interview Guides</p>
+
+    <p>• CPT & OPT Information</p>
+
+    <p>• Work Authorization Basics</p>
+
+    <p>• Career Planning Tools</p>
+
+  </div>
+
+</section>
+
+
+
+<!-- APPLY BUTTON -->
+<button id="googleFormBtn">
+  Apply Here
+</button>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <p>
+      © 2023 INIZIO ENGAGE USA. All rights reserved.
+    </p>
+
+
+    <div class="footer-links">
+
+      <a href="#home">Home</a> |
+
+      <a href="#jobs">Jobs</a> |
+
+      <a href="#schools">Schools</a> |
+
+      <a href="#resources">Resources</a>
+
+    </div>
+
+
+    <div class="newsletter">
+
+      <input
+        type="email"
+        placeholder="Subscribe to newsletter"
+      >
+
+      <button>
+        Subscribe
+      </button>
+
+    </div>
+
+
+    <div class="social-icons">
+
+      <a href="#">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+
+      <a href="#">
+        <i class="fab fa-facebook"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<script src="../HTML/school.js"></script>
+<script src="/css/HTML/school.js"></script>
+
+</body>
+</html>
+```
